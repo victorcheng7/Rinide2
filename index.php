@@ -1,5 +1,5 @@
 <?php
-require('./mailin.php');
+require('mailin.php');
 $result = array("code" => "" );
 $input = isset($_POST["inputText"]) ? $_POST["inputText"] : "j";
 
