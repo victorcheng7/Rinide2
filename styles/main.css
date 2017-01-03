@@ -1,0 +1,274 @@
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/* General */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+body {
+	font-family: Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: white;
+	background: url(../images/crop_2.jpg);
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+img {
+	width: 100%;
+	display: block;
+}
+a, a:hover, a:active, a:target, a:focus {
+	color: inherit;
+	text-decoration: none;
+}
+strong {
+	font-weight: bold;
+}
+li {
+	list-style: none;
+}
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/* wrappers */
+section {
+	position: relative;
+	width: 100%;
+}
+section.centered {
+	display: table;
+	height: auto;
+	min-height: 100%;
+}
+.container {
+	padding: 8%;
+}
+section.centered .container {
+	height: 100%;
+	min-height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+section .title {
+	text-align: center;
+	font-size: 40px;
+	margin-bottom: 70px;
+	font-weight: bold;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/* START PAGE */
+.header .iphone-design {
+	position: relative;
+	width: 50%;
+	float: left;
+}
+
+.iphone-design#filters {
+	left: -10px;
+}
+
+img.info-logo {
+	width: 11%;
+	display: inline-block;
+	-moz-box-shadow: 0 2px 10px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.1);
+	box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: bold;
+}
+
+p.about {
+	display: block;
+	font-size: 30px;
+	width: 90%;
+	line-height: 38px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+a.btn, input.btn {
+	position: relative;
+	padding: 15px;
+	font-size: 26px;
+	border: 4px solid #EF4239;
+	border-radius: 50px;
+	font-weight: bold;
+	color: #EF4239;
+	display: inline-block;
+	text-align: center;
+	background: white;
+	-moz-box-shadow: 0 2px 10px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 2px 10px rgba(0,0,0,.1);
+	box-shadow: 0 2px 10px rgba(0,0,0,.1);
+	cursor: pointer;
+}
+a.btn:focus, input.btn:focus {
+	outline: none;
+	color: #EF4239;
+}
+a.btn:visited, input.btn:visited, a.btn:active, input.btn:active {
+	color: #EF4239;
+}
+a.btn:hover, input.btn:hover {
+	background: #EF4138;
+	color: white;
+	border: 4px solid white;
+}
+
+input.btn {
+	display: block;
+	float: none;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/* FEATURE PAGE */
+section.features {
+	background: white;
+}
+
+.feature {
+	text-align: center;
+}
+
+.feature img {
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.feature p {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.feature h3 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/* EMAIL/LEARN MORE PAGE */
+
+section.subscribe {
+	background: #EF4239;
+	color: white;
+}
+
+section.subscribe .title {
+	margin-bottom: 20px;
+}
+
+section.subscribe p {
+	text-align: center;
+	font-size: 18px;
+	line-height: 30px;
+	margin-bottom: 50px;
+}
+
+section.subscribe input.email {
+	position: relative;
+	display: block;
+	width: 70%;
+	font-size: 22px;
+	padding: 20px;
+	margin: 0 auto;
+	color: #333;
+	outline: none;
+	border: none;
+	border-radius: 3px;
+}
+
+section.subscribe input:focus {
+	outline: none;
+}
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/* FOOTER PAGE */
+
+section.footer {
+	color: black;
+	font-size: 40px;
+	text-align: center;
+}
+
+
+/*----------------------------------------------------------------*/
+/*----------------------------------------------------------------*/
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+
+/* Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+	.feature-waitlist {
+		margin-top: 10%;
+	}
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+	.container {
+		padding: 20% 10%;
+	}
+	.image-block {
+		margin-top: 20px;
+	}
+	.feature {
+		margin-top: 10%;
+		border-bottom: 1px solid rgba(0,0,0,.3);
+		padding-bottom: 10%;
+	}
+	.feature-waitlist {
+		border: none;
+	}
+	.feature-alert {
+		margin-top: 0;
+	}
+	section .title {
+		margin-bottom: 0;
+	}
+	section.subscribe input.email {
+		width: 90%;
+	}
+	h1 {
+		text-align: center;
+	}
+	h1 img.info-logo {
+		width: 15%;
+	}
+	p.about {
+		text-align: center;
+		font-size:  25px;
+		line-height: 30px;
+		width: 100%;
+	}
+	a.btn, input.btn {
+		display: block;
+	}
+}
